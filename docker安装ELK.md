@@ -1,4 +1,13 @@
 ### 安装elasticsearch
+
+#### docker环境变量调整
+- 参考：https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html
+```
+wsl -d docker-desktop
+sysctl -w vm.max_map_count=262144
+```
+
+
 - 参考：https://blog.csdn.net/qq_15973399/article/details/105094444
 ```
 docker pull elasticsearch:7.6.2
