@@ -95,3 +95,12 @@ GET index/_search
 
 ### springboot项目连接
 https://github.com/Motianshi/all-search.git
+
+
+### 安装elasticsearch-head
+docker pull mobz/elasticsearch-head:5
+docker run -d -p 9100:9100 docker.io/mobz/elasticsearch-head:5
+
+如果连不上elasticsearch，vi ES配置文件elasticsearch.yml加入2个参数，并重启
+http.cors.enabled: true
+http.cors.allow-origin: "*"
